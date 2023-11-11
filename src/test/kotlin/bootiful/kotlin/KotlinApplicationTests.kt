@@ -1,5 +1,7 @@
 package bootiful.kotlin
 
+import bootiful.kotlin.model.Customer
+import bootiful.kotlin.repository.CustomerRepository
 import kotlinx.coroutines.flow.count
 import kotlinx.coroutines.flow.last
 import kotlinx.coroutines.runBlocking
@@ -10,7 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
 class KotlinApplicationTests(
-		@Autowired val customerRepository: CustomerRepository) {
+		@Autowired val customerRepository: CustomerRepository
+) {
 
 	@Test
 	fun contextLoads() {
